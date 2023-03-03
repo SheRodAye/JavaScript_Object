@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>RESULT CAN SEE IN CONSOLE</h1>
+
+<script>
+	function student(FirstName, LastName, Address, Age, Email){
+		this.Fname = FirstName;
+		this.Lname = LastName;
+		this.Add = Address;
+		this.age = Age;
+		this.email = Email;
+	}
+	
+	const Student = new student("Mary", "Smith", "BURKHARDT RD. EVANSVILLE", "29", "mary123@yahoo.com");
+	
+	student.prototype.Nationality = "Filipino";
+	student.prototype.Language = "Tagalog";
+	
+	console.log(Student);
+</script>
+</body>
+</html>

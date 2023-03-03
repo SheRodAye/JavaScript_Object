@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>RESULT CAN SEE IN CONSOLE</h1>
+
+<script>
+let inp1 = parseInt(prompt("INPUT A FIRST NUMBER"));
+let inp2 = parseInt(prompt("INPUT A SECOND NUMBER"));
+
+	function arithmetic(num1, num2) {
+  const addition = num1 + num2;
+  const subtraction = num1 - num2;
+  const multiplication = num1 * num2;
+  const dividision = num1 / num2;
+
+  return [addition, subtraction, multiplication, dividision];
+}
+
+const [addition, subtraction, multiplication, dividision] = arithmetic(inp1, inp2);
+
+console.log(addition);
+console.log(subtraction);
+console.log(multiplication);
+console.log(dividision);
+</script>
+</body>
+</html>
